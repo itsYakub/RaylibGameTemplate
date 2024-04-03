@@ -33,7 +33,6 @@ set(
 set(
     INCLUDE_DIRECTORIES
     -I${CMAKE_SOURCE_DIR}/lib/raylib/src # raysan5/raylib
-    -I${CMAKE_SOURCE_DIR}/lib/json/single_include/nlohmann # nlohmann/json
     -I${CMAKE_SOURCE_DIR}/lib/emsdk/upstream/emscripten/system/include # emscripten-core/emsdk
 )
 
