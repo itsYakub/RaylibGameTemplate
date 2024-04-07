@@ -1,6 +1,6 @@
 <div align="Center">
 
-# Raylib Game Template
+# Raylib Game Template 🎮
 
 </div>
 
@@ -14,11 +14,11 @@ This is the general-purpose raylib project template in C++.
 
 ## Naming convention:
 This list presents the naming covention I'm using for my project structure. Feel free to modify it, but remember to also make simillar changes in the **[CMakeLists.txt](https://github.com/itsYakub/RaylibGameTemplate/blob/main/CMakeLists.txt)**.
-- **Source directory** - *src*;
-- **Include directory** - *include*;
-- **Dependencies / Modules / Libraries directory** - *lib*;
-- **Resources directory** - *res*;
-- **Binary / Build directory** - *bin*;
+- **Source directory** - */src/*;
+- **Include directory** - */include/*;
+- **Dependencies / Modules / Libraries directory** - */lib/*;
+- **Resources directory** - */res/*;
+- **Binary / Build directory** - */bin/*;
 
 ## Setup
 ### 1. Build For Desktop:
@@ -65,7 +65,7 @@ emmake make
 ```bash
 emrun ./{game_title}.html
 ```
-***NOTE:*** *This CMake workflow is menaged from the position of the binary directory; if you want to use CMake from the main project's directory, modify the CMake file respectively (mainly: `--shell-file` and `--preload-file`)*.
+***NOTE:*** *This CMake workflow is managed from the position of the binary directory; if you want to use CMake from the main project's directory, modify the CMake file respectively (mainly: `--shell-file` and `--preload-file`)*.
 
 ## Licence
 This template is originally under the **[MIT Licence](https://github.com/itsYakub/RaylibGameTemplate/blob/main/LICENCE)**, but you can modify it to suite your needs. You can use **[licenses/license-templates](https://github.com/licenses/license-templates)** to get the free licence template.

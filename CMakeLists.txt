@@ -1,5 +1,12 @@
 cmake_minimum_required(VERSION 3.14) # FetchContent is available in 3.11+
-project(game VERSION 1.0)
+
+project(
+    game 
+    VERSION 1.0
+    DESCRIPTION "Template for C++ games in raylib" 
+    HOMEPAGE_URL "https://github.com/itsYakub/RaylibGameTemplate"
+    LANGUAGES CXX
+)
 
 # Generate compile_commands.json
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -43,6 +50,7 @@ set(
 
 set(
     INCLUDE_DIRECTORIES
+    -I${CMAKE_SOURCE_DIR}/include # default project include directory
     -I${CMAKE_SOURCE_DIR}/lib/raylib/src # raysan5/raylib
     -I${CMAKE_SOURCE_DIR}/lib/emsdk/upstream/emscripten/system/include # emscripten-core/emsdk
 )
