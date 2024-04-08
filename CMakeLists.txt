@@ -1,4 +1,7 @@
-cmake_minimum_required(VERSION 3.14) # FetchContent is available in 3.11+
+# This CMakeLists.txt file is a modification of already existing CMake file from the raylib's repository:
+# https://github.com/raysan5/raylib/tree/master/projects/CMake
+
+cmake_minimum_required(VERSION 3.14)
 
 project(
     game 

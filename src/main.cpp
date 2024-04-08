@@ -54,7 +54,7 @@ public:
     }
 
     // This function is called on every game's cycle.
-    // Porpose: render game's elements, components, text, etc.
+    // Purpose: render game's elements, components, text, etc.
     void Render() {
         ClearBackground(RAYWHITE);
     }
