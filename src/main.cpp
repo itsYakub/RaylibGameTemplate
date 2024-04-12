@@ -58,6 +58,12 @@ public:
     void Render() {
         ClearBackground(RAYWHITE);
     }
+
+    // This function is called on every game's cycle.
+    // Purpose: render game's GUI layout.
+    void RenderGUI() {
+
+    }
 };
 
 // Function called on every frame. Handles the basic updating and rendering of the current game frame.
@@ -68,6 +74,7 @@ void UpdateRenderFrame(void* args) {
 
     BeginDrawing();
     static_cast<Game*>(args)->Render();
+    static_cast<Game*>(args)->RenderGUI();
     EndDrawing();
 }
 
