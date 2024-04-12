@@ -71,7 +71,19 @@ if (${PLATFORM} STREQUAL "Web")
 
 endif()
 
-# Checks if OSX and links appropriate frameworks (Only required on MacOS)
+if (LINUX)
+
+    target_link_options(${PROJECT_NAME} PRIVATE -static-libgcc -static-libstdc++)
+
+endif()
+
+if (WIN32)
+
+    target_compile_options(${PROJECT_NAME} PRIVATE -mwindows)
+    target_link_options(${PROJECT_NAME} PRIVATE -static)
+
+endif()
+
 if (APPLE)
 
     target_link_libraries(${PROJECT_NAME} "-framework IOKit")
