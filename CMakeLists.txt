@@ -48,15 +48,15 @@ set(
 
 set(
     INCLUDE_DIRECTORIES
-    -I${CMAKE_SOURCE_DIR}/include # default project include directory
-    -I${CMAKE_SOURCE_DIR}/lib/raylib/src # raysan5/raylib
-    -I${CMAKE_SOURCE_DIR}/lib/emsdk/upstream/emscripten/system/include # emscripten-core/emsdk
+    ${CMAKE_SOURCE_DIR}/include # default project include directory
+    ${CMAKE_SOURCE_DIR}/lib/raylib/src # raysan5/raylib
+    ${CMAKE_SOURCE_DIR}/lib/emsdk/upstream/emscripten/system/include # emscripten-core/emsdk
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
-target_include_directories(${PROJECT_NAME} PRIVATE ${INCLUDE_DIRECTORIES})
+target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDE_DIRECTORIES})
 
 # Web Configurations
 if (${PLATFORM} STREQUAL "Web")
