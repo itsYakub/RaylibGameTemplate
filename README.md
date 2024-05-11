@@ -12,14 +12,6 @@ This is the general-purpose raylib project template in C++.
 - **[CMake;](https://cmake.org/)**
 - **[Build system of your choosing;](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html#id7)**
 
-## Naming convention:
-This list presents the naming convention I'm using for my project structure. Feel free to modify it, but remember to also make simillar changes in the **[CMakeLists.txt](https://github.com/itsYakub/RaylibGameTemplate/blob/main/CMakeLists.txt)**.
-- **Source directory** - *src*
-- **Include directory** - *include*
-- **Dependencies / Modules / Libraries directory** - *lib*
-- **Resources directory** - *res*
-- **Binary / Build directory** - *bin*
-
 ## Setup
 ### 1. Build For Desktop:
 - Pull all the necessary **submodules**:
